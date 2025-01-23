@@ -73,4 +73,33 @@ jobs:
     git push origin v1.0  
     \end{verbatim}  
 \end{itemize}     
+\section{Exploration Tasks}
+\subsection{Vim Advanced Features} 
+3 advanced features of Vim: 
+\begin{itemize}  
+    \item \textbf{Split Windows:} Splitting the screen into multiple windows for simultaneous editing.  
+    \item \textbf{Macros:} Recording sequences of commands for automation.  
+    \item \textbf{Registers:} Using different registers to store and retrieve text.  
+\end{itemize}
+\subsection{Memory profiling}  
+\subsubsection{Memory Leak}
+Memory leaks occur when a program allocates memory but fails to release it after use, leading to reduced performance or crashes.
+\subsubsection{Memory Profilers}  
+Valgrind is a tool for memory debugging, memory leak detection, and profiling. It helps identify memory issues in applications, ensuring efficient memory management.
+\subsection{GNU/Linux Bash Scripting}
+\subsubsection{fzf}  
+Fuzzy searching allows users to find files or strings based on partial matches, improving search efficiency.
+\begin{verbatim}  
+ls | fzf 
+\end{verbatim}  
+allows you to quickly find and choose a file from the current directory interactively, enhancing your efficiency in navigating files in the command line. It's particularly useful when you have a large number of files and directories, as it reduces the need to scroll through the entire list.
+\subsubsection{Using fzf to find your favorite PDF}
+To list all PDF files:  
+\begin{verbatim}  
+fd *.pdf  
+\end{verbatim}  
+Selecting a PDF with fzf:  
+\begin{verbatim}  
+fd *.pdf | fzf  
+\end{verbatim}
 \end{document}  
